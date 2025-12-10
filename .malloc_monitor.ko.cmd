@@ -1,0 +1,1 @@
+savedcmd_malloc_monitor.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.17.0-1004-gcp/scripts/module.lds -o malloc_monitor.ko malloc_monitor.o malloc_monitor.mod.o .module-common.o
